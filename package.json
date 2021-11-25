@@ -1,0 +1,19 @@
+{
+  "name": "automated-screenshots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npx ncc build index.js --license licenses.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.32.0",
+    "looks-same": "^7.3.0",
+    "puppeteer": "^11.0.0"
+  }
+}
