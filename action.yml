@@ -1,13 +1,14 @@
 name: 'Screenshot and Diff'
 description: 'Create screenshots of a set of URLs and run diffs between old and new versions'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: 'composite'
+  steps:
+    - name: Set up node
+      uses: actions/setup-node@v2
+    - name: Install dependencies
+      run: npm install
+      shell: bash
+    - name: Create screenshots & diffs
+      run: npm run start
+      shell: bash
+
