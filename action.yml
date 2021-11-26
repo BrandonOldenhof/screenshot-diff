@@ -6,9 +6,9 @@ runs:
     - name: Set up node
       uses: actions/setup-node@v2
     - name: Install dependencies
-      run: npm install
+      run: cd $GITHUB_ACTION_PATH && npm install
       shell: bash
     - name: Create screenshots & diffs
-      run: npm run start
+      run: cd $GITHUB_ACTION_PATH && npm run start
       shell: bash
 
