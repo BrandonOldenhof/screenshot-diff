@@ -33,7 +33,7 @@ const getDateTime = () => {
   const hour = date.getHours();
   const minute = date.getMinutes();
 
-  return `${year}${month}${day}-${hour}:${minute}`;
+  return `${year}${month}${day}-${hour}${minute}`;
 };
 
 /**
