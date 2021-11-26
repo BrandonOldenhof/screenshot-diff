@@ -15,6 +15,7 @@ const takePageScreenshot = async (page, filename, url) => {
     path: filename,
     fullPage: true,
   });
+  console.log(`Screenshot placed in ${filename}`)
 };
 
 const prepareDirectoryStructure = (path) => {
