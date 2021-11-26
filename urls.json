@@ -1,10 +1,10 @@
 {
     "pages": {
-        "home": "https://sovib.test/",
-        "insurances" :"https://sovib.test/verzekeringen",
-        "news" :"https://sovib.test/nieuws",
-        "about" :"https://sovib.test/over-sovib",
-        "vancanies" :"https://sovib.test/vacatures",
-        "contact" :"https://sovib.test/contact"
+        "home": "https://sovib.nl/",
+        "insurances" :"https://sovib.nl/verzekeringen",
+        "news" :"https://sovib.nl/nieuws",
+        "about" :"https://sovib.nl/over-sovib",
+        "vancanies" :"https://sovib.nl/vacatures",
+        "contact" :"https://sovib.nl/contact"
     }
 }
