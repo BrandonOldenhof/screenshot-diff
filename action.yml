@@ -11,6 +11,12 @@ runs:
     - name: Create screenshots & diffs
       run: cd $GITHUB_ACTION_PATH && npm run start
       shell: bash
+    - name: test1
+      run: ls -la
+      shell: bash
+    - name: test2
+      run: cd $GITHUB_ACTION_PATH && ls -la
+      shell: bash
     - uses: actions/upload-artifact@v2
       with:
         path: $GITHUB_ACTION_PATH/screenshots
